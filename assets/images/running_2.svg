@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="stealthGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" rx="20" />
+  
+  <!-- Stealth Hexagon Grid Pattern -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1" fill="none">
+    <polygon points="50,20 100,50 100,110 50,140 0,110 0,50" />
+    <polygon points="150,20 200,50 200,110 150,140 100,110 100,50" />
+    <polygon points="250,20 300,50 300,110 250,140 200,110 200,50" />
+    <polygon points="350,20 400,50 400,110 350,140 300,110 300,50" />
+    <polygon points="450,20 500,50 500,110 450,140 400,110 400,50" />
+    
+    <polygon points="50,140 100,170 100,230 50,260 0,230 0,170" />
+    <polygon points="150,140 200,170 200,230 150,260 100,230 100,170" />
+    <polygon points="250,140 300,170 300,230 250,260 200,230 200,170" />
+    <polygon points="350,140 400,170 400,230 350,260 300,230 300,170" />
+    <polygon points="450,140 500,170 500,230 450,260 400,230 400,170" />
+  </g>
+  
+  <!-- Running Shoe Outline Graphics -->
+  <g transform="translate(40, 60)">
+    <!-- Sole (Cyber Air Cushion) -->
+    <path d="M70,300 C150,310 220,315 280,290 C330,270 380,220 410,210 C410,240 370,300 310,320 C240,340 140,340 70,300 Z" fill="#0f172a" stroke="url(#neonCyan)" stroke-width="4" filter="url(#cyanGlow)" />
+    <!-- Air Bubble chamber -->
+    <rect x="110" y="303" width="70" height="15" rx="7" fill="none" stroke="url(#neonCyan)" stroke-width="2" opacity="0.8" />
+    <line x1="125" y1="303" x2="125" y2="318" stroke="url(#neonCyan)" stroke-width="2" />
+    <line x1="145" y1="303" x2="145" y2="318" stroke="url(#neonCyan)" stroke-width="2" />
+    <line x1="165" y1="303" x2="165" y2="318" stroke="url(#neonCyan)" stroke-width="2" />
+
+    <!-- Upper Mesh -->
+    <path d="M90,285 C140,285 180,240 210,180 C240,130 310,110 355,140 C375,155 395,185 405,210 C375,220 330,270 280,290 C220,315 150,310 90,285 Z" fill="url(#stealthGrad)" stroke="#1e293b" stroke-width="4" />
+    <!-- Wave lines -->
+    <path d="M160,250 C210,240 260,190 310,150" fill="none" stroke="url(#neonCyan)" stroke-width="3" opacity="0.7" />
+    <path d="M180,270 C230,260 280,210 330,170" fill="none" stroke="url(#neonCyan)" stroke-width="3" opacity="0.4" />
+    
+    <!-- Laces Details -->
+    <path d="M260,160 L280,180 M275,145 L295,165 M290,130 L310,150" stroke="#000000" stroke-width="4" stroke-linecap="round" />
+    <!-- Reflective Heel Tab -->
+    <path d="M90,240 L75,250 L85,270 Z" fill="url(#neonCyan)" opacity="0.9" />
+  </g>
+
+  <!-- Typography overlay -->
+  <text x="40" y="440" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="900" font-size="28" letter-spacing="3">TRIPLE BLACK</text>
+  <text x="40" y="465" fill="#06b6d4" font-family="'Outfit', sans-serif" font-weight="600" font-size="14" letter-spacing="1">STEALTH AIR RUNNER SERIES</text>
+</svg>

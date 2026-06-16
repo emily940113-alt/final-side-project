@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#311042" />
+    </linearGradient>
+    <linearGradient id="auroraGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="50%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <filter id="auroraGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" rx="20" />
+  
+  <!-- Aurora light waves -->
+  <path d="M-50,150 Q100,50 250,150 T550,150 L550,550 L-50,550 Z" fill="url(#auroraGrad)" opacity="0.15" filter="url(#auroraGlow)" />
+  
+  <!-- Running Shoe Outline Graphics -->
+  <g transform="translate(40, 60)" filter="url(#auroraGlow)">
+    <!-- Sole (Carbon Propulsion) -->
+    <path d="M70,300 C150,310 220,315 280,290 C330,270 380,220 410,210 C410,240 370,300 310,320 C240,340 140,340 70,300 Z" fill="url(#auroraGrad)" opacity="0.85" />
+    <!-- Upper Mesh -->
+    <path d="M90,285 C140,285 180,240 210,180 C240,130 310,110 355,140 C375,155 395,185 405,210 C375,220 330,270 280,290 C220,315 150,310 90,285 Z" fill="#2e1065" stroke="url(#auroraGrad)" stroke-width="5" />
+    <!-- Wave lines -->
+    <path d="M120,280 C170,270 220,200 280,160 C290,150 320,135 340,145 C300,180 240,240 160,285 Z" fill="url(#auroraGrad)" opacity="0.9" />
+    <!-- Lightweight Holes -->
+    <circle cx="200" cy="220" r="4" fill="#ffffff" opacity="0.8" />
+    <circle cx="215" cy="210" r="4" fill="#ffffff" opacity="0.8" />
+    <circle cx="230" cy="200" r="4" fill="#ffffff" opacity="0.8" />
+    <circle cx="245" cy="190" r="4" fill="#ffffff" opacity="0.8" />
+    <circle cx="260" cy="180" r="4" fill="#ffffff" opacity="0.8" />
+  </g>
+
+  <!-- Typography overlay -->
+  <text x="40" y="440" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="900" font-size="28" letter-spacing="3">AURORA LIGHT</text>
+  <text x="40" y="465" fill="#ec4899" font-family="'Outfit', sans-serif" font-weight="600" font-size="14" letter-spacing="1">HYBRID LIGHTWEIGHT TRAINER</text>
+</svg>

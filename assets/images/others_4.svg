@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bae6fd" />
+      <stop offset="100%" stop-color="#7dd3fc" />
+    </linearGradient>
+    <linearGradient id="corkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#0284c7" flood-opacity="0.2" />
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" rx="20" />
+  
+  <!-- Ocean ripples graphic -->
+  <path d="M0,450 C150,480 350,420 500,450 L500,500 L0,500 Z" fill="#38bdf8" opacity="0.5" />
+  <path d="M0,470 C100,490 300,450 500,470 L500,500 L0,500 Z" fill="#0284c7" opacity="0.3" />
+
+  <!-- Sandal Graphic -->
+  <g transform="translate(60, 90)" filter="url(#softShadow)">
+    <!-- Cork Sole (Ergonomic contoured profile) -->
+    <path d="M40,240 C90,250 170,250 230,230 C280,215 320,195 340,180 C340,195 300,225 250,245 C200,265 100,265 40,240 Z" fill="url(#corkGrad)" />
+    <!-- EVA Black Bottom Sole -->
+    <path d="M40,248 C90,258 170,258 230,238 C280,223 320,203 340,188 C340,192 300,229 250,249 C200,269 100,269 40,248 Z" fill="#1e293b" />
+    
+    <!-- Sandal Strap 1 (Front strap) -->
+    <path d="M220,135 C240,110 260,110 280,120 C290,125 305,145 300,165 C280,175 270,185 240,195 L220,135 Z" fill="#1e293b" stroke="#ffffff" stroke-width="1.5" />
+    <!-- Sandal Strap 2 (Instep strap) -->
+    <path d="M120,175 C140,140 170,140 190,150 C200,155 210,180 200,205 C180,215 160,220 130,215 L120,175 Z" fill="#1e293b" stroke="#ffffff" stroke-width="1.5" />
+    
+    <!-- Metal Buckles on Straps -->
+    <rect x="258" y="118" width="12" height="15" rx="2" fill="#d1d5db" stroke="#374151" stroke-width="1" />
+    <rect x="158" y="145" width="12" height="15" rx="2" fill="#d1d5db" stroke="#374151" stroke-width="1" />
+  </g>
+
+  <!-- Typography overlay -->
+  <text x="40" y="440" fill="#0369a1" font-family="'Outfit', sans-serif" font-weight="900" font-size="28" letter-spacing="2">CORK SANDALS</text>
+  <text x="40" y="465" fill="#075985" font-family="'Outfit', sans-serif" font-weight="700" font-size="14" letter-spacing="1">SUMMER COMFORT BUCKLE SLIDE</text>
+</svg>

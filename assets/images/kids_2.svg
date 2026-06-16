@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#3b0764" />
+    </linearGradient>
+    <linearGradient id="cyberGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" rx="20" />
+  
+  <!-- Glow Sparkles -->
+  <path d="M100,80 L110,95 L125,100 L110,105 L100,120 L90,105 L75,100 L90,95 Z" fill="#22c55e" filter="url(#neonGlow)" />
+  <path d="M400,100 L405,110 L415,112 L405,115 L400,125 L395,115 L385,112 L395,110 Z" fill="#06b6d4" filter="url(#neonGlow)" />
+  
+  <!-- Shoe Graphic -->
+  <g transform="translate(50, 80)">
+    <!-- Sole with Light Emitting Dots -->
+    <path d="M60,260 C130,270 200,275 260,250 C310,230 350,190 380,180 C380,210 340,260 280,280 C220,300 120,300 60,260 Z" fill="#1e293b" stroke="url(#cyberGreen)" stroke-width="4" />
+    <!-- Flashing LED circles -->
+    <circle cx="120" cy="275" r="8" fill="#eab308" filter="url(#neonGlow)" />
+    <circle cx="170" cy="282" r="8" fill="#22c55e" filter="url(#neonGlow)" />
+    <circle cx="220" cy="284" r="8" fill="#ef4444" filter="url(#neonGlow)" />
+    <circle cx="270" cy="275" r="8" fill="#06b6d4" filter="url(#neonGlow)" />
+
+    <!-- Shoe Body -->
+    <path d="M80,245 C120,245 150,200 180,150 C210,100 280,90 320,120 C340,135 360,160 370,180 C340,190 300,230 260,250 C200,275 130,270 80,245 Z" fill="url(#cyberGreen)" opacity="0.9" />
+    <path d="M160,210 C200,200 240,160 280,135" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Typography overlay -->
+  <text x="40" y="440" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="900" font-size="28" letter-spacing="2">LIGHT-UP RUNNER</text>
+  <text x="40" y="465" fill="#22c55e" font-family="'Outfit', sans-serif" font-weight="700" font-size="14" letter-spacing="1">FLASHING SENSITIVE LED SERIES</text>
+</svg>

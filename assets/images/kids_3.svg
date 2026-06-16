@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="5" flood-color="#000000" flood-opacity="0.2" />
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" rx="20" />
+  
+  <!-- Skater star details -->
+  <path d="M250,50 L260,75 L285,75 L265,90 L272,115 L250,100 L228,115 L235,90 L215,75 L240,75 Z" fill="#ffffff" opacity="0.25" />
+
+  <!-- Shoe Graphic -->
+  <g transform="translate(55, 80)" filter="url(#shadow)">
+    <!-- White Skater Sole -->
+    <path d="M50,260 C120,265 190,265 250,250 C290,240 330,210 360,200 C360,220 320,255 270,270 C220,285 120,285 50,260 Z" fill="#ffffff" />
+    <!-- Denim Shoe Upper -->
+    <path d="M70,245 C110,245 130,210 160,165 C190,120 260,110 295,140 C315,155 340,180 350,200 C320,210 280,240 250,250 C190,268 120,265 70,245 Z" fill="#475569" stroke="#ffffff" stroke-width="2" />
+    <!-- White Cap Toe -->
+    <path d="M320,180 C330,185 340,192 350,200 C320,210 295,215 285,210 Z" fill="#ffffff" />
+    
+    <!-- White Laces (crisscross) -->
+    <line x1="210" y1="155" x2="240" y2="185" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+    <line x1="240" y1="155" x2="210" y2="185" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+    <line x1="240" y1="185" x2="270" y2="215" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+    <line x1="270" y1="185" x2="240" y2="215" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+  </g>
+
+  <!-- Typography overlay -->
+  <text x="40" y="440" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="900" font-size="28" letter-spacing="2">DENIM CASUAL</text>
+  <text x="40" y="465" fill="#fbcfe8" font-family="'Outfit', sans-serif" font-weight="700" font-size="14" letter-spacing="1">KIDS STREETWEAR FASHION</text>
+</svg>

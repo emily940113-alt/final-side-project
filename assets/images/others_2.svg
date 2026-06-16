@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" rx="20" />
+  
+  <!-- Cool retro star graphic in background -->
+  <path d="M120,80 L130,105 L155,105 L135,120 L142,145 L120,130 L98,145 L105,120 L85,105 L110,105 Z" fill="#ffffff" opacity="0.3" />
+
+  <!-- Shoe Graphic -->
+  <g transform="translate(50, 70)" filter="url(#shadow)">
+    <!-- Flat Vulcanized Sole -->
+    <path d="M50,280 C120,285 190,285 250,270 C290,260 330,230 360,220 C360,240 320,275 270,290 C220,305 120,305 50,280 Z" fill="#ffffff" stroke="#1e293b" stroke-width="2" />
+    <line x1="50" y1="285" x2="330" y2="280" stroke="#ef4444" stroke-width="2" />
+    
+    <!-- Canvas High-Top Body -->
+    <path d="M70,265 C90,265 100,200 110,120 C140,80 180,90 210,120 C240,150 280,180 320,210 C340,220 350,220 355,223 C310,230 280,260 250,270 C190,288 120,285 70,265 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+    <!-- Yellow Outer Canvas layer -->
+    <path d="M80,260 C100,260 110,200 120,130 C150,90 170,100 200,130 C230,160 270,190 310,220 C310,220 280,245 250,255 C190,273 130,275 80,260 Z" fill="#d97706" />
+    
+    <!-- White Circle Star Patch (Chuck Taylor style) -->
+    <circle cx="150" cy="170" r="22" fill="#ffffff" />
+    <path d="M150,158 L154,166 L163,166 L156,171 L159,179 L150,174 L141,179 L144,171 L137,166 L146,166 Z" fill="#ef4444" />
+    
+    <!-- Rubber Toe Cap -->
+    <path d="M310,220 C325,220 345,215 355,223 C335,235 315,245 300,240 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+    
+    <!-- Laces Crisscross -->
+    <line x1="210" y1="165" x2="230" y2="185" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+    <line x1="230" y1="185" x2="250" y2="205" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Typography overlay -->
+  <text x="40" y="440" fill="#451a03" font-family="'Outfit', sans-serif" font-weight="900" font-size="28" letter-spacing="2">RETRO HIGH-TOP</text>
+  <text x="40" y="465" fill="#78350f" font-family="'Outfit', sans-serif" font-weight="700" font-size="14" letter-spacing="1">CLASSIC VULCANIZED CANVAS</text>
+</svg>

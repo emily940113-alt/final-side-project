@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="shoeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39ff14" />
+      <stop offset="50%" stop-color="#ff007f" />
+      <stop offset="100%" stop-color="#ff7700" />
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" rx="20" />
+  
+  <!-- Sport Grid Lines -->
+  <path d="M0,100 L500,100 M0,200 L500,200 M0,300 L500,300 M0,400 L500,400" stroke="#334155" stroke-width="1" stroke-dasharray="5 5" />
+  <path d="M100,0 L100,500 M200,0 L200,500 M300,0 L300,500 M400,0 L400,500" stroke="#334155" stroke-width="1" stroke-dasharray="5 5" />
+  
+  <!-- Running Shoe Outline Graphics -->
+  <g transform="translate(40, 60)" filter="url(#neonGlow)">
+    <!-- Sole (Carbon Propulsion) -->
+    <path d="M70,300 C150,310 220,315 280,290 C330,270 380,220 410,210 C410,240 370,300 310,320 C240,340 140,340 70,300 Z" fill="url(#shoeGrad)" opacity="0.9" />
+    <!-- Upper Mesh -->
+    <path d="M90,285 C140,285 180,240 210,180 C240,130 310,110 355,140 C375,155 395,185 405,210 C375,220 330,270 280,290 C220,315 150,310 90,285 Z" fill="#1e293b" stroke="url(#shoeGrad)" stroke-width="6" />
+    <!-- Dynamic Swoosh / Lines -->
+    <path d="M180,260 C230,260 270,210 320,170 C330,162 350,155 365,160 C330,185 270,250 200,275 Z" fill="url(#shoeGrad)" />
+    <!-- Laces Details -->
+    <path d="M260,160 L280,180 M275,145 L295,165 M290,130 L310,150" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+    <!-- Technical Sole Cutouts -->
+    <circle cx="120" cy="315" r="10" fill="#ffffff" />
+    <circle cx="160" cy="320" r="10" fill="#ffffff" />
+    <circle cx="200" cy="322" r="10" fill="#ffffff" />
+    <circle cx="240" cy="320" r="10" fill="#ffffff" />
+    <circle cx="280" cy="312" r="10" fill="#ffffff" />
+  </g>
+
+  <!-- Typography overlay -->
+  <text x="40" y="440" fill="#ffffff" font-family="'Outfit', sans-serif" font-weight="900" font-size="28" letter-spacing="3">NEON SPEED</text>
+  <text x="40" y="465" fill="#39ff14" font-family="'Outfit', sans-serif" font-weight="600" font-size="14" letter-spacing="1">SOLEBOOST ACTIVE RUNNER</text>
+</svg>
