@@ -9,7 +9,8 @@ const products = [
     originalPrice: 4580,
     rating: 4.9,
     reviewsCount: 184,
-    image: "assets/images/mens_1.png",
+    image: "assets/images/梁育瑄的鞋店-1號男士鞋子",
+    title="梁育瑄鞋店1號男士鞋子，銷量第二名。",
     description: "極致奢華的德比皮鞋，採用頂級全粒面牛皮製成。經典的開放式襟片設計，不僅穿著舒適度極佳，更散發出無可比擬的英倫紳士氣息。適合商務場合與正式晚宴。",
     features: [
       "頂級義大利進口全粒面牛皮",
